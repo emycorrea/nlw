@@ -1,8 +1,43 @@
 body {
-    background-image: url(./assets/bg.jpg);
+    background-image: url(./assets/v627-aew-41-technologybackground.jpg);
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #121214;
+}
+
+body * {
+    font-family: Bungee Spice, cursive;
+    line-height: 160%;
+}
+
+header {
+    padding-top: 30px;
+}
+
+header div {
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg,#870ed8 0%, #4c24dd 50.52%, #8b55f0 100%);
+
+    border-radius: 50%;
+    display: flex;
+    padding: 5px;
+}
+
+header img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+main {
+    max-width: 589px;
+    width: 90%;
+    margin: 15px auto;
+}
+
+section {
+    background-image: linear-gradient(90deg,#870ed8 0%, #4c24dd 50.52%, #8b55f0 100%);
+    border-radius: 20px;
 }
 
