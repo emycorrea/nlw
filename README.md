@@ -17,3 +17,5 @@ Projeto construído no evento Next Level Week da Rocketseat.
 ## <3 Contato
 
 emilly.correa31@gmail.com 
+
+https://www.linkedin.com/in/emilly-correa/
