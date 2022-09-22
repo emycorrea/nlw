@@ -1,18 +1,28 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
 body {
-    background-image: url(./assets/v627-aew-41-technologybackground.jpg);
+    background-image: url(./assets/triangle0_11_hor_02.jpg);
     background-position: top center;
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-color: #121214;
 }
 
 body * {
-    font-family: Bungee Spice, cursive;
+    font-family:'Cairo', sans-serif;
     line-height: 160%;
 }
 
 header {
-    padding-top: 30px;
+    padding-top: 32px;
+    height: calc(120px + 32px);
 }
 
 header div {
@@ -23,6 +33,11 @@ header div {
     border-radius: 50%;
     display: flex;
     padding: 5px;
+    transition: transform .3s;
+}
+
+header div:hover {
+    transform: scale(1.1);
 }
 
 header img {
@@ -30,52 +45,128 @@ header img {
     border-radius: 50%;
 }
 
+
 main {
-    max-width: 589px;
+    max-width: 580px;
     width: 90%;
     margin: 15px auto;
+
+    display: grid;
+    gap: 12px;
 }
 
 section {
     background-image: linear-gradient(90deg,#870ed8 0%, #4c24dd 50.52%, #8b55f0 100%);
-    border-radius: 20px;
-}
-
-section div {
-    background-color: #241938;
-    padding: 32px;
     border-radius: 10px;
     padding-top: 15px;
 }
 
+section div {
+    background-color: #725791;
+    padding: 30px;
+    border-radius: 5px;
+    padding-top: 15px;
+}
+
 section h2 {
-    letter-spacing: 0.50px;
+    letter-spacing: 0.80px;
 }
 
 section p {
-    letter-spacing: 0,20px;
+    letter-spacing: 0,30px;
 }
 
 section ul {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+
     gap: 15px;
-    margin: 20px;
+    margin-top: 20px;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
 }
 
 .games-list img {
-    width: 130px;
+    width: 120px;
+    border-radius: 15%;
+    background-color: #121214;
+    padding: 1px;
 }
 
 .music-list img {
     width: 130px;
+    border-radius: 50%;
+    background-color: #121214;
+    padding: 1px;
 }
 
 .series-list img {
     width: 130px;
+    border-radius: 15%;
+    background-color:#121214;
+    padding: 1px;
 }
 
 .animes-list img {
     width: 130px;
+    border-radius: 15%;
+    background-color: #121214;
+    padding: 1px;
+}
+
+/* animation */
+
+header div {
+    animation: fromtop .8s .4s backwards;
+}
+
+main section {
+    animation: frombottom .7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: .0s;
+}
+
+main section:nth-child(2) {
+    animation-delay: .4s;
+}
+
+main section:nth-child(3) {
+    animation-delay: .8s;
+}
+
+main section:nth-child(4) {
+    animation-delay: .10s;
+}
+
+@keyframes fromtop {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes frombottom {
+    from{
+        opacity: 0;
+        transform: translateX(-30px)
+    }
+    
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

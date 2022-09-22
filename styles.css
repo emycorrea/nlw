@@ -59,8 +59,8 @@ main {
 section {
     color: white;
     background-image: linear-gradient(90deg,#9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
-    padding-top: 4px;
-    border-radius: 10px;
+    padding-top: 15px;
+    border-radius: 20px;
 }
 
 section div {
@@ -110,7 +110,7 @@ section ul li:hover {
 
 /* animation*/
 header div {
-    animation: fromtop .7s .4s backwards;
+    animation: fromtop .8s .4s backwards;
 }
 
 main section {
